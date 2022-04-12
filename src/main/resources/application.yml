@@ -1,0 +1,21 @@
+spring:
+    jpa:
+        show-sql: true
+        database: mysql
+        database-platform: org.hibernate.dialect.MySQL8Dialect
+        hibernate:
+            ddl-auto: update
+        
+
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
+
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: "jdbc:mysql://192.168.100.10:3306/noah?serverTimezone=UTC"
+        username: root
+        password: root
+
+
